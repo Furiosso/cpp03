@@ -1,16 +1,16 @@
-#include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main(void)
 {
     // Crear objetos
     std::cout << "=== Creación de objetos ===" << std::endl;
-    ScavTrap pepe;
-    ScavTrap luis("Luis");
+    FragTrap pepe;
+    FragTrap luis("Luis");
 
-    // Probar guardGate
-    std::cout << "\n=== Probando guardGate ===" << std::endl;
-    pepe.guardGate();
-    luis.guardGate();
+    // Probar highFivesGuys
+    std::cout << "\n=== Probando highFivesGuys ===" << std::endl;
+    pepe.highFivesGuys();
+    luis.highFivesGuys();
 
     // Probar ataque
     std::cout << "\n=== Probando attack ===" << std::endl;
@@ -23,12 +23,12 @@ int main(void)
 
     // Probar constructor de copia
     std::cout << "\n=== Probando constructor de copia ===" << std::endl;
-    ScavTrap luis_copy(luis);
+    FragTrap luis_copy(luis);
     luis_copy.attack("AnotherBot");
 
     // Probar operador de asignación
     std::cout << "\n=== Probando operador de asignación ===" << std::endl;
-    ScavTrap assign_test("AssignTest");
+    FragTrap assign_test("AssignTest");
     assign_test = luis;
     assign_test.attack("YetAnotherBot");
 
