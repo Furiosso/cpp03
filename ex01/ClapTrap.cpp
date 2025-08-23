@@ -1,16 +1,16 @@
 # include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap(void) : _name("Pepe"), _hit_points(10), _energy_points(10), _attack_damage(0)
+ClapTrap::ClapTrap(void) : _name("Pepe"), _hit_points(100), _energy_points(50), _attack_damage(20)
 {
 	std::cout << "ClapTrap Pepe has been created" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string name) : _name(name), _hit_points(10), _energy_points(10), _attack_damage(0)
+ClapTrap::ClapTrap(const std::string name) : _name(name), _hit_points(100), _energy_points(50), _attack_damage(20)
 {
 	std::cout << "ClapTrap " << name << " has been created" << std::endl;
 }
 
-ClapTrap::ClapTrap(const ClapTrap& src) : _name(src.getName()), _hit_points(src.getHitPoints()), _energy_points(src._energy_points), _attack_damage(src.getAttackDamage())
+ClapTrap::ClapTrap(const ClapTrap& src) : _name(src.getName()), _hit_points(src.getHitPoints()), _energy_points(src.getEnergyPoints()), _attack_damage(getAttackDamage()) 
 {
 	std::cout << "Claptrap " << this->_name << " has been copied" << std::endl;
 }
