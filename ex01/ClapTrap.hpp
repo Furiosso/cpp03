@@ -16,7 +16,7 @@ class	ClapTrap {
 		ClapTrap(const std::string name);
 		ClapTrap(const ClapTrap& src);
 		ClapTrap& operator=(const ClapTrap& rhs);
-		~ClapTrap(void);
+		virtual ~ClapTrap(void);
 		std::string		getName(void) const;
 		unsigned int	getHitPoints(void) const;
 		unsigned int	getEnergyPoints(void) const;
