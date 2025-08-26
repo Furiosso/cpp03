@@ -1,4 +1,4 @@
-# include "DiamondTrap.hpp"
+#include "DiamondTrap.hpp"
 
 DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap(), _name("Paco") {}
 

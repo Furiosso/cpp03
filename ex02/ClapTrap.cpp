@@ -1,4 +1,4 @@
-# include "ClapTrap.hpp"
+#include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap(void) : _name("Pepe"), _hit_points(10), _energy_points(10), _attack_damage(0)
 {

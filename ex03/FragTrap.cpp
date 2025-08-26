@@ -1,6 +1,9 @@
-# include "FragTrap.hpp"
+#include "FragTrap.hpp"
 
 
+const int	_defaultHitPoints = 100;
+const int	_defaultEnergyPoints = 100;
+const int	_defaultAttackDamage = 30;
 
 FragTrap::FragTrap(void) : ClapTrap()
 {
