@@ -1,8 +1,8 @@
 #include "ScavTrap.hpp"
 
-const int	_defaultHitPoints = 100;
-const int	_defaultEnergyPoints = 50;
-const int	_defaultAttackDamage = 20;
+const int	ScavTrap::_defaultHitPoints = 100;
+const int	ScavTrap::_defaultEnergyPoints = 50;
+const int	ScavTrap::_defaultAttackDamage = 20;
 
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
