@@ -4,7 +4,8 @@
 # include <string>
 # include <iostream>
 
-class	ClapTrap {
+class	ClapTrap
+{
 	protected:
 		std::string		_name;
 		int				_hit_points;

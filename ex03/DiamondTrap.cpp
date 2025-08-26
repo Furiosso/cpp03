@@ -5,9 +5,9 @@ DiamondTrap::DiamondTrap(void) : ScavTrap(), FragTrap(), _name("Paco") {}
 DiamondTrap::DiamondTrap(std::string name) : ScavTrap(), FragTrap(), _name(name)
 {
 	this->ClapTrap::_name = name + "_clap_name";
-	this->_hit_points = FragTrap::_hit_points;
-	this->_energy_points = ScavTrap::_energy_points;
-	this->_attack_damage = FragTrap::_attack_damage;
+	this->_hit_points = FragTrap::_defaultHitPoints;
+	this->_energy_points = ScavTrap::_defaultEnergyPoints;
+	this->_attack_damage = FragTrap::_defaultAttackDamage;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& src) : ClapTrap(src), ScavTrap(src), FragTrap(src), _name(src._name)

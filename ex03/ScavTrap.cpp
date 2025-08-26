@@ -2,17 +2,17 @@
 
 ScavTrap::ScavTrap(void) : ClapTrap()
 {
-	this->_hit_points = 100;
-	this->_energy_points = 50;
-	this->_attack_damage = 20;
+	this->_hit_points = _hit_points;
+	this->_energy_points = _energy_points;
+	this->_attack_damage = _attack_damage;
 	std::cout << "ScavTrap Pepe has been created" << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
-	this->_hit_points = 100;
-	this->_energy_points = 50;
-	this->_attack_damage = 20;
+	this->_hit_points = _defaultHitPoints;
+	this->_energy_points = _defaultEnergyPoints;
+	this->_attack_damage = _defaultAttackDamage;
 	std::cout << "ScavTrap " << name << " has been created" << std::endl;
 }
 
